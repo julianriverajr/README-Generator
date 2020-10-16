@@ -8,6 +8,16 @@ function promptUser() {
     return inquirer.prompt([
         {
             type: "input",
+            message: "What is your GitHub username? (no @ needed)",
+            name: "userName"
+        },
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "email"
+        },
+        {
+            type: "input",
             message: "What is the title of your project?",
             name: "title"
         },
@@ -46,11 +56,6 @@ function promptUser() {
             type: "input",
             message: "Provide tests for your application, and provide examples on how to run them.",
             name: "tests"
-        },
-        {
-            type: "input",
-            message: "Input a way you can be contacted with questions on your application or repo (e.g., email).",
-            name: "questions"
         }
     ]);
 }
@@ -63,7 +68,14 @@ function generateREADME(answers) {
 ${answers.description}
 
 ## Table of Contents
-${answers.tableOfContents}
+* [Description](#description)
+* [Table of Contents](#tableofcontents)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 ${answers.installation}
@@ -81,7 +93,7 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-${answers.questions}
+Please contact me at https://github.com/${answers.userName} or at ${answers.email} with any questions.
 
 ![Badge](https://img.shields.io/badge/JavaScript-100%25-blue)`
 }
