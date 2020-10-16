@@ -28,11 +28,6 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "Write your Table of Contents (if necessary).",
-            name: "tableOfContents"
-        },
-        {
-            type: "input",
             message: "What are the steps required to install your project? Provide a step-by-step description.",
             name: "installation"
         },
@@ -85,6 +80,7 @@ ${answers.usage}
 
 ## License
 ${answers.license}
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) (https://opensource.org/licenses/MIT)
 
 ## Contributing
 ${answers.contributing}
