@@ -54,3 +54,32 @@ function promptUser() {
         }
     ]);
 }
+
+function generateREADME(answers){
+    return `
+    # ${title}
+
+    ## Description
+    ${description}
+    
+    ## Table of Contents
+    ${tableOfContents}
+    
+    ## Installation
+    ${installation}
+    
+    ## Usage
+    ${usage}
+
+    ## License
+    ${license}
+    
+    ## Contributing
+    ${contributing}
+    
+    ## Tests
+    ${tests}
+    
+    ## Questions
+    ${questions}`
+}
