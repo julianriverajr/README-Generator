@@ -81,7 +81,9 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-${answers.questions}`
+${answers.questions}
+
+![Badge](https://img.shields.io/badge/JavaScript-100%25-blue)`
 }
 
 async function init() {
@@ -92,7 +94,7 @@ async function init() {
 
         await writeFileAsync("README1.md", readme);
 
-        console.log("Successfully wrote to README.md");
+        console.log("Successfully wrote to README1.md");
     } catch(err) {
         console.log(err);
     }
