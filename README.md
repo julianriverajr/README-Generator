@@ -28,6 +28,30 @@ Once dependencies have been installed:
 4. Answer questions
 Use this app when you want to make a decent README file.
 
+Image of Opening Integrated Terminal:
+![Image of Opening Integrated Terminal](./images/openInTerminal.png)
+
+Image of typing in node command:
+![Image of Typing in Node](./images/typeNode.png)
+
+Image of questions being answered:
+![Image of Answering Questions](./images/answeringQuestions.png)
+
+Image of logged answers:
+![Image of Logged Answers](./images/loggedAnswers.png)
+
+Image of generated README:
+![Image of Generated ReadMe](./images/generatedReadMe.png)
+
+Other image of README:
+![Other Image of README](./images/ReadMe.png)
+
+Yet another image of README:
+![Yet Another Image of README](./images/ReadMe2.png)
+
+Still another image of README:
+![Still Another Image of README](./images/ReadMe3.png)
+
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
