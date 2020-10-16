@@ -57,31 +57,31 @@ function promptUser() {
 
 function generateREADME(answers) {
     return `
-    # ${title}
+# ${answers.title}
 
-    ## Description
-    ${description}
-    
-    ## Table of Contents
-    ${tableOfContents}
-    
-    ## Installation
-    ${installation}
-    
-    ## Usage
-    ${usage}
+## Description
+${answers.description}
 
-    ## License
-    ${license}
-    
-    ## Contributing
-    ${contributing}
-    
-    ## Tests
-    ${tests}
-    
-    ## Questions
-    ${questions}`
+## Table of Contents
+${answers.tableOfContents}
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## License
+${answers.license}
+
+## Contributing
+${answers.contributing}
+
+## Tests
+${answers.tests}
+
+## Questions
+${answers.questions}`
 }
 
 async function init() {
@@ -90,7 +90,7 @@ async function init() {
 
         const readme = generateREADME(answers);
 
-        await writeFileAsync("README.md", readme);
+        await writeFileAsync("README1.md", readme);
 
         console.log("Successfully wrote to README.md");
     } catch(err) {
